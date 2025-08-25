@@ -1,0 +1,6 @@
+#!/bin/sh
+echo "🔍 Running lint-staged..."
+bunx lint-staged || exit 1
+
+echo "🏗️ Running build..."
+bun run build || exit 1
